@@ -7,7 +7,7 @@ function RootLayout({ children }) {
     <html lang="en">
       <body>
         {children}
-
+         <footer>Copyright Josh Inc.</footer>
       </body>
     </html>
   );
