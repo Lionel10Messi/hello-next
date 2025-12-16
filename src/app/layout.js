@@ -5,6 +5,8 @@ import { cookies } from 'next/headers';
 import { LIGHT_COLORS, DARK_COLORS } from '@/constants';
 
 import DarkLightToggle from '@/components/DarkLightToggle';
+import HeaderContentWrapper from '@/components/HeaderWrapper';
+
 
 import './styles.css';
 
@@ -17,10 +19,7 @@ async function RootLayout({ children }) {
   return (
     <html lang="en" data-color-theme={theme} style={themeColors}>
       <body>
-        <header className="site-header">
-          <Link href="">Theme</Link>
-          <DarkLightToggle initialTheme={theme} />
-        </header>
+        <HeaderContentWrapper initialTheme={theme} />
         {children}
       </body>
     </html>

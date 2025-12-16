@@ -8,8 +8,7 @@ import VisuallyHidden from '@/components/VisuallyHidden';
 
 import styles from './DarkLightToggle.module.css';
 
-function DarkLightToggle({ initialTheme }) {
-  const [theme, setTheme] = React.useState(initialTheme);
+function DarkLightToggle({ theme, setTheme }) {
 
   function handleClick() {
     const nextTheme = theme === 'light' ? 'dark' : 'light';
